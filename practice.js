@@ -1,31 +1,31 @@
 //////////////////PROBLEM 1////////////////////
 
 //Create a variable called myName that is a string data type
-
+let myName = 'James'
 //Code here
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
-
+let myAge = 19
 //Code here
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
-
+let lovesCode = true
 //Code here
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
-
+let greatestFear
 //Code here
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
-
+let devMountainGoal = null
 //Code here
 
 //////////////////PROBLEM 6////////////////////
@@ -34,21 +34,25 @@
 //accepts name as its only parameter.
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
-
+function greeting(name) {
+return `Hello, ${name}`
+}
 //Code here
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
-
+let newGreeting = function(name) {
+  return `Hello, ${name}`
+}
 //Code Here
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
-
+let groceries = ["apples", "milk", "eggs", "bread"]
 //Code Here
 
 //////////////////PROBLEM 9////////////////////
@@ -57,12 +61,17 @@
 //The dog object should have the following properties:
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
-
+let dog = {
+  name: 'Joe',
+  color: 'Brown',
+  age: 4,
+  goodBoy: true
+}
 //Code Here
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
-
+let devMountainClassPet = dog.name
 //Code Here
 
 //////////////////PROBLEM 10////////////////////
@@ -73,7 +82,15 @@
 //If the name parameter is Bryan, return 'Hey Bryan!'
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
-
+function nameCheck(name) {
+  if (name === 'Steven') {
+    return 'What is up Steven?'
+  } else if (name === 'Bryan') {
+    return 'Hey Bryan!'
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 // Code here
 
 //////////////////PROBLEM 11////////////////////
