@@ -98,12 +98,14 @@ function nameCheck(name) {
 // Create a function called add that takes in two parameters
 // that will be numbers.
 // The add function should return the two parameters added together
-
+function add (numOne, numTwo) {
+  return numOne + numTwo
+}
 //Code Here
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
-
+let mathSum = add(3, 4)
 //Code Here
 
 //////////////////PROBLEM 12////////////////////
@@ -114,7 +116,17 @@ function nameCheck(name) {
 // If the passed in color equals 'green', return 'green is a solid favorite color'
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-
+function faveColorFinder(color) {
+  if (color === 'red') {
+    return 'red is a great color'
+  } else if (color === 'green') {
+    return 'green is a solid favorite color'
+  } else if (color === 'black') {
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
 // Code here
 
 //////////////////PROBLEM 13////////////////////
